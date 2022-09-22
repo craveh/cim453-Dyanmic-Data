@@ -10,16 +10,17 @@ $response = $_POST;
      <title>Mad Libs</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+     <link href="style.css" rel="stylesheet" type="text/css" />
    </head>
    <body>
      <div class="container">
        <div class="row">
-         <div class="col">
-           How To Cross Piranha Infested Water:
+         <div class="col text-center my-3">
+           <h1>How To Cross Piranha Infested Water:</h1>
          </div>
        </div>
-       <div class="row">
-         <div class="col">
+       <div class="row madlib">
+         <div class="col col-8 offset-2">
            <p>
              If you are traveling in
              <strong><?php echo $response['country'] ?></strong>
@@ -48,7 +49,7 @@ $response = $_POST;
              </li>
              <li>Whatever you do, if you have an open wound, try to find
                another way to find your way back to the
-               <strong><?php echo $response['place'] ?></strong>. 
+               <strong><?php echo $response['place'] ?></strong>.
                Piranhas are attracted to fresh
                <strong><?php echo $response['liquid'] ?></strong>
                and will most likely take a bite out of your
@@ -58,12 +59,8 @@ $response = $_POST;
                in the water!
              </li>
            </ul>
-
          </div>
-
        </div>
-
      </div>
-
    </body>
  </html>

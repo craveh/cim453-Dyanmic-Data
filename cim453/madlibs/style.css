@@ -1,0 +1,12 @@
+body{
+  background-color: #e2e8dd;
+  color: #7e1f86;
+}
+
+.btn-primary {
+    background-color: #A14DA0 !important;
+}
+
+.madlib{
+  font-size: 18px;
+}

@@ -6,14 +6,16 @@
     <title>Mad Libs</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col col-12">
+        <div class="col col-12 text-center mt-3">
           <h1>Mad Libs</h1>
         </div>
-        <div class="col-6">
+        <div class="col-12">
           <form action="madlibs.php" method="post">
             <!-- Link: https://imgur.com/G5bBzc8 -->
             <div class="mb-3">
@@ -68,10 +70,11 @@
               <label class="form-label" for="verb">Verb:</label>
               <input type="text" class="form-control" name="verbs[]" required>
             </div>
+            <div class="d-flex justify-content-center mb-3">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
 
+            </div>
 
-
-            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
 
