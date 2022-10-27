@@ -34,14 +34,11 @@
     </div>
   </div>
 </nav>
-
 <div class="container">
   <div class="row">
     <div class="col">
-      <?php writeTitle("h2", $title, 'class="primary"'); ?>
+      <?php writeTitle("h2" , $title , 'class="primary"'); ?>
 
     </div>
-
   </div>
-
 </div>
